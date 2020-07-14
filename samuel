@@ -1,1 +1,22 @@
 Testi File
+
+import numpy as np
+import cv2
+
+peopleout, peoplein = 0, 0
+line = 300
+
+cap = cv2.VideoCapture(' peopleCount.mp4')  # Open video file
+
+# Create the background substractor
+# fgbg = cv2.BackgroundSubtractorMOG()
+
+# Create the background substractor
+# ******Creates a GMG Background Subtractor.
+# fgbg = cv2.bgsegm.createBackgroundSubtractorGMG()
+
+# ******Creates a CNT Background Subtractor.
+# fgbg = cv2.bgsegm.createBackgroundSubtractorCNT()
+
+# ******Creates mixture-of-gaussian background subtractor.
+fgbg = cv2.bgsegm.createBackgroundSubtractorMOG()
